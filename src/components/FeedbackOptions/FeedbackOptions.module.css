@@ -1,0 +1,15 @@
+.btn {
+  padding: 5px 20px;
+  border: 1px solid grey;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #a5cbf5;
+}
+.btnWrapper {
+  display: flex;
+  gap: 5px;
+}
