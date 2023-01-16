@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 import Notification from "components/Notification/Notification";
 
 const Statisctics = ({ good, neutral, bad, total, positivePercentage }) => {
-  const isExistStaticts = good || neutral || bad;
+
   return (
     <>
-        {isExistStaticts ? (
+        {total ? (
           <>
             <p>Good: {good }</p>
             <p>Neural: { neutral }</p>

@@ -11,7 +11,6 @@ class App extends Component {
     bad: 0,
   }
 
-  feedbackOptions = ['good', 'neutral', 'bad'];
 
   countTotalFeedback = () => {
     return this.state.good + this.state.neutral + this.state.bad;
@@ -34,7 +33,7 @@ class App extends Component {
     return (
       <div className={styles.wrapper}>
         <Section title={'Please levave feedback'}>
-          <FeedbackOptions options={this.feedbackOptions} onLeaveFeedback={this.onLeaveFeedback} />
+          <FeedbackOptions options={Object.keys(this.state)} onLeaveFeedback={this.onLeaveFeedback} />
         </Section>
         
         <Section title={'Statistics'}>
