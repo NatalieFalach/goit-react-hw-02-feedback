@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { nanoid } from 'nanoid';
 import styles from './FeedbackOptions.module.css';
 
 const FeedbackOptions = ({ options, onLeaveFeedback}) => {
@@ -7,7 +6,7 @@ const FeedbackOptions = ({ options, onLeaveFeedback}) => {
     <div className={styles.btnWrapper}>
         {options.map(option => {
           return (
-            <button className={styles.btn} key={nanoid()} onClick={() => onLeaveFeedback(option)}>{ option }</button>
+            <button className={styles.btn} key={option} onClick={() => onLeaveFeedback(option)}>{ option }</button>
           )
         })}
       </div>
